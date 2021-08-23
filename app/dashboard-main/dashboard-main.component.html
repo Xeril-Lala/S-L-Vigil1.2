@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light shadow-sm ">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-black min-vh-100">
+              
+                  <span class="m-3" style="font-size:23px; color: black;">Sensor Areas</span>
+                    <app-room>
+                    </app-room>
+                    
+                <span  class="m-3" style="font-size:23px; color: black;">Device's States</span>
+                  <app-devicestatus>
+                  </app-devicestatus>
+                  <hr>
+
+          </div>
+      </div>
+      <div class="col">
+        <div class="row" style="height: 40%;">
+          
+              <!--Temperature Gauge Sensor-->
+              <div class="col-3 p-1 m-3 bg-light shadow-sm rounded mx-auto">
+                <div class="row">
+                  <div class="col-6">
+                    <app-lptemperature>
+                    </app-lptemperature>
+                  </div>
+                  <div class="col-6">
+                    <app-temperaturegauge>
+                    </app-temperaturegauge>
+                  </div>
+                </div>
+              </div>
+
+              <!--Humidity Sensor-->
+              <div class="col-3 p-1 m-3 bg-light shadow-sm rounded ">
+                <div class="row">
+                    <div class="col-6">
+                      <app-lphumidity>
+                      </app-lphumidity>
+                    </div>
+                  <div class="col-6">
+                    <app-humidity>
+                    </app-humidity>
+                  </div>
+                </div>
+              </div>
+
+              <!--Dust Sensor-->
+              <div class="col-3 p-1 m-3 bg-light shadow-sm rounded mx-auto">
+                <div class="row">
+                  <div class="col-6">
+                    <app-lpdust>
+                    </app-lpdust>
+                  </div>
+                  <div class="col-6">
+                    <app-dust>
+                    </app-dust>
+                  </div>
+                </div>
+              </div>
+
+              <!--PIR Sensor-->
+              <div class="col-4 bg-light shadow-sm rounded p-1 m-3 mx-auto">
+                <app-pir>
+                </app-pir>
+              </div>
+
+              <!--Temperature Sensor-->
+              <div class="col-7 bg-light shadow-sm rounded p-1 m-3 mx-auto">
+                <app-temperature>
+                </app-temperature>
+              </div>
+        </div>
+      </div>
+  </div>
+</div>
